@@ -1,0 +1,57 @@
+
+<html>
+
+<head>
+
+    <title>Calculator</title>
+
+    <script type=text/javascript>
+
+        function calculator() {
+            while (operatia != 0) {
+
+                var operatia = prompt("Ce doriti sa calculati\n\n0. Inchide programul\n1. Adunare\n2. Scadere\n3. Inmultire\n4. Impartire\n", "Introduceti Operatia");
+
+                if (operatia == 1) {
+                    var num1 = prompt("Introduceti primul numar");
+                    var num2 = prompt("Introduceti al doilea numar");
+                    alert ("Rezultatul este " + (Number(num1)+Number(num2)));
+
+                } else if (operatia == 2) {
+                    var num1 = prompt("Introduceti primul numar");
+                    var num2 = prompt("Introduceti al doilea numar");
+                    alert ("Rezultatul este " + (Number(num1)-Number(num2)));
+
+                } else if (operatia == 3) {
+                    var num1 = prompt("Introduceti primul numar");
+                    var num2 = prompt("Introduceti al doilea numar");
+                    alert ("Rezultatul este " + (Number(num1)*Number(num2)));
+
+                } else if (operatia == 4) {
+                    var num1 = prompt("Introduceti primul numar");
+                    var num2 = prompt("Introduceti al doilea numar");
+                    alert ("Rezultatul este " + (Number(num1)/Number(num2)));
+
+                }
+            }
+        }
+    </script>
+
+</head>
+
+<body>
+
+<h1> Calculator </h1>
+<hr>
+
+<center>
+    <input type=button value="Ruleaza programul" onClick="calculator()">
+</center>
+
+<hr>
+
+
+
+</body>
+
+</html> 
